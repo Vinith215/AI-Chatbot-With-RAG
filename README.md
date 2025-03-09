@@ -17,22 +17,21 @@ Prerequisites:
 - A Groq API key (sign up at Groq to obtain one)
 - The attention.pdf file (or any PDF you’d like the chatbot to reference) in the project directory.
 
-Project Layout:
+Installation:
 
-Setup Ulfor the Chatbot (Part 1):
+1. Install Required Packages:
+   - pipenv install streamlit langchain_groq langchain_community pypdf sentence-transformers
+  
+2. Set up a virtual environment
+   - pipenv shell
 
-1. Chatbot
-2. Streamlit
-3. Usage from the Ul
-   
-Connect to LLM (Part 2):
+3. Set up environmental variables: Create a .env file in the root directory and add your Groq API key:
+   - GROQ_API_KEY=your-groq-api-key
+  
+4. Add a PDF File:
+   - Place the attention.pdf file (or your own PDF) in the project directory. This will be used as the knowledge base for RAG.
 
-1. Langchain
-2. Groq
-   
-Integrate RAG (Part 3):
+6. Run the Applicatio:
+   - streamlit run app.py
 
-1. Upload document(s)
-2. Vector Embeddings
-3. RAG (Retrieval Augmented Generation)
    
